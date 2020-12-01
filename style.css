@@ -1,0 +1,110 @@
+/* SELETTORE {
+proprietà: valore;
+proprietà: valore;
+}  */
+
+/* Impostazioni di default per decidere margini, bordi.. */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-image: url(background.jpg);
+  background-size: cover;
+}
+.Layover{
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  border-radius: 2%;
+  width: 1000px;
+  padding:50px 100px;
+}
+
+/* Tutto ciò che riguarda l'header e il nav */
+
+.Logo img{
+  width: auto;
+  height: 80px;
+}
+.Title{
+  text-align: center;
+  color: #00ff00;
+}
+.Barra{
+  background-color: #00ff00;
+  height:40px;
+  margin-top: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.Barra a,button{
+  text-decoration: none;
+  color: rgb(0,0,0);
+  padding: 1px;
+  border-radius: 10%;
+  font-size: 12px;
+}
+.Tasti{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
+
+
+/* Tutto ciò che riguarda il main */
+.Type{
+  margin-top: 20px;
+  width: 50%;
+  /* Ho dato come lunghezza della riga metà della sua lunghezza totale, per poi inserire le percentuali della carica */
+}
+.Model{
+  color: white;
+  font-weight: 400;
+  padding-left: 10px;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+.Descrizione{
+  color: lightgrey;;
+  font-weight: 100;
+  margin: 5px 0;
+}
+
+.Carica{
+  /* lunghezza riferita al Type */
+  max-width: 100%;
+
+  height: 20px;
+  font-size: 10px;
+  text-align: right;
+  padding: 3px;
+  font-family:'Roboto', sans-serif;
+  border-radius: 5%;
+
+}
+.Carica.G22{
+  background-color: #ff9966;
+  /* Lunghezza riferita alla carica, per poter stabilire la percentuale */
+  width:50%;
+}
+.Carica.Mike24{
+  background-color: #03c03c;
+  width: 100%;
+}
+.Carica.Fedel124{
+  background-color: #3f888f;
+  width:30%;
+}
+.Type:hover .Percentuale{
+  display: block;
+}
+.Percentuale{
+  display:none;
+}
